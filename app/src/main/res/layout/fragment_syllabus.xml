@@ -1,0 +1,100 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_height="match_parent"
+android:layout_width="match_parent">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context="com.example.jokerlol.acharyaone.Syllabus">
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:id="@+id/spinner"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="190dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Syllabus as per 2010 Scheme"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Select your Semester"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp" />
+
+        <Button
+            android:background="@drawable/custom_button_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Syllabus"
+            android:textColor="#ffffff"
+            android:id="@+id/button"
+            android:onClick="gotosyllabus"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="390dp" />
+
+        <Button
+            android:background="@drawable/custom_button_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prescribed Textbooks"
+            android:id="@+id/button2"
+            android:textColor="#ffffff"
+            android:onClick="gotobooks"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="450dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Select your Subject"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="260dp"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:id="@+id/spinner2"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+</LinearLayout>

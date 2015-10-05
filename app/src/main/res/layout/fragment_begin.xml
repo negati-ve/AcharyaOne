@@ -1,0 +1,109 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_height="match_parent"
+android:layout_width="match_parent">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context="com.example.jokerlol.acharyaone.BeginFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do i know you"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:paddingBottom="20dp"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name here"
+            android:background="@drawable/apptheme_edit_text_holo_light"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From which semester are you from"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:paddingBottom="20dp"/>
+
+        <Spinner
+            android:id="@+id/sem_spinner_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="and from which section are you from"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:paddingBottom="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/section_begin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="remember me"
+            android:id="@+id/remember"
+            android:textSize="20sp"
+            android:background="@drawable/custom_button"
+            android:shadowColor="#ff03a9f4"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+</LinearLayout>

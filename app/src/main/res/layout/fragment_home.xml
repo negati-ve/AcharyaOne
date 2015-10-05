@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ffE0E0E0"
+tools:context="com.example.jokerlol.acharyaone.Home">
+
+<TextView
+    android:layout_weight="3"
+    android:id="@+id/myname"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:text=""
+    android:textSize="40sp"
+    android:textColor="#000000"
+    android:gravity="bottom|center_horizontal" />
+
+    <TextView
+        android:id="@+id/mycurrentperiod"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/mynextperiod"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:textSize="35sp"
+        android:gravity="top|center_horizontal" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="match_parent"
+        android:text="check again"
+        android:textSize="20sp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#ffffffff"
+        android:background="@drawable/custom_button_home"/>
+
+</LinearLayout>

@@ -1,0 +1,661 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/again"
+    android:layout_height="0dp"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:textColor="#000000"
+    android:text="For 5th semester B and C section Tea Break is between 11:30-11:45 on wednesday"
+    android:gravity="center" />
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="24"
+    android:paddingBottom="3dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="3dp"
+    android:background="#ffE0E0E0"
+    tools:context="com.example.jokerlol.acharyaone.TimeTableDisplay1">
+
+    <TableRow
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/dayperiod"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+
+            android:gravity="center"
+            android:text="DAY/PERIOD"
+            android:background="@drawable/cell_shape"/>
+
+        <TextView
+            android:id="@+id/period1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="8:45 to 9:40"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"/>
+
+        <TextView
+            android:id="@+id/peroid2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="9:40 to 10:35"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"/>
+
+        <TextView
+            android:id="@+id/teabreak"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="10:35 to 10:50"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"/>
+
+        <TextView
+            android:id="@+id/period3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="10:50 to 11:45"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"/>
+
+        <TextView
+            android:id="@+id/period4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="11:45 to 12:40"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/period5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="12:40 to 1:35"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/lunchbreak"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="1:35 to 2:15"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/period6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="2:15 to 3:10"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/period7"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="3:10 to 4:05"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/period8"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="4:05 to 5:00"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/monday"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"
+            android:text="MON"/>
+
+        <TextView
+            android:id="@+id/monday1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+
+        <TextView
+            android:id="@+id/monday2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+
+        <TextView
+            android:id="@+id/teabreak1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="B"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+
+        <TextView
+            android:id="@+id/monday3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/monday4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/monday5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/lunchbreak1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="L"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/monday6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/monday7"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/monday8"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tuesday"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"
+            android:text="TUES"/>
+
+        <TextView
+            android:id="@+id/tuesday1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/tuesday2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/teabreak2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="R"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/tuesday3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/tuesday4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/tuesday5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/lunchbreak2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="U"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/tuesday6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/tuesday7"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/tuesday8"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/wednesday"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"
+            android:text="WED"/>
+
+        <TextView
+            android:id="@+id/wednesday1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/wednesday2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/teabreak3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="E"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/wednesday3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/wednesday4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/wednesday5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/lunchbreak3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="N"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/wednesday6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/wednesday7"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/wednesday8"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/thursday"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"
+            android:text="THURS"/>
+
+        <TextView
+            android:id="@+id/thursday1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/thursday2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/teabreak4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="A"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/thursday3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/thursday4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/thursday5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/lunchbreak4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="C"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/thursday6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/thursday7"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/thursday8"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/friday"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"
+            android:text="FRI"/>
+
+        <TextView
+            android:id="@+id/friday1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/friday2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/teabreak5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="K"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/friday3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/friday4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/friday5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/lunchbreak5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="H"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/friday6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/friday7"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+        <TextView
+            android:id="@+id/friday8"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/cell_inner_shape"/>
+        />
+
+    </TableRow>
+
+</TableLayout>
+</LinearLayout>

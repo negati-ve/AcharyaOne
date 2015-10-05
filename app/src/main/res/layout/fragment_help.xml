@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.jokerlol.acharyaone.helpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n-> To open navigation drawer swipe from left to right or tap on the top left button which looks like three horizontal lines.\n\n->  When you opened the app for the first time you might you have noticed that app asked you to enter your name,semeter,section.\n\n-> If you entered wrong details by mistake then you can change it by opening 'CHANGE MT DETAILS' option from navigation drawer.\n\n-> After giving your details open the 'HOME' option from navigation drawer to see what is current period and what is next period.\n\n-> To view the timetable of any section open 'TIMETABLE' option from navigation drawer.\n\n-> What if you want to call/email a faculty member but don't know their phone number/email address then open 'FACULTY' option from navigation drawer then select the faculty member and tap on the phone/email icon to call/email them.\n\n-> To know the syllabus/reference books open 'SYLLABUS' option from navigation drawer.\n\n-> To check notifications open 'NOTIFICATION' option from navigation drawer.\n\n-> Do you have suggest/feedback open 'FEEDBACK' option from navigation drawer."
+        android:textSize="20sp"
+        android:scrollbars="vertical"
+        android:textColor="#000000"/>
+
+</FrameLayout>
