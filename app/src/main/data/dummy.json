@@ -1,0 +1,76 @@
+//one simplified variants of many that I could work out on the structuring.. 
+//Try this out.. improvise as you move!
+{"branch": { 
+  "cse":[
+  {
+    "semester": "7",
+    "section": "B",
+    "lastupdate": "1445352040",
+    "description": "Updated to reflect updates by CSE HOD",
+    "timetable":[
+    {
+
+      "monday":
+      {
+        "ACA":"8:45",
+        "Web":"9:40",
+        "tea break":"10:35",
+        "C#":"10:50",
+        "JAVA":"11:45",
+        "OOMD":"12:40",
+        "lunch break":"1:35",
+        "ECS":"2:15"
+      }
+      ,
+      "tuesday":
+      {
+        "Web":"8:45",
+        "ACA":"9:40",
+        "tea break":"10:35",
+        "C#":"10:50",
+        "OOMD":"11:45",
+        "JAVA":"12:40",
+        "lunch break":"1:35",
+        "ECS":"2:15"
+      }
+      },
+      ]
+      },
+    {
+        "semester": "7",
+        "section": "A",
+        "lastupdate": "1445352040",
+        "description": "Updated to reflect updates by CSE HOD",
+        "timetable":[
+        {
+
+          "monday":
+          {
+            "ACA":"8:45",
+            "Web":"9:40",
+            "tea break":"10:35",
+            "C#":"10:50",
+            "JAVA":"11:45",
+            "OOMD":"12:40",
+            "lunch break":"1:35",
+            "ECS":"2:15"
+          }
+          ,
+          "tuesday":
+          {
+            "Web":"8:45",
+            "ACA":"9:40",
+            "tea break":"10:35",
+            "C#":"10:50",
+            "OOMD":"11:45",
+            "JAVA":"12:40",
+            "lunch break":"1:35",
+            "ECS":"2:15"
+          }
+          },
+          ]
+        }
+        ]
+      }
+    }
+
