@@ -7,43 +7,58 @@ android:orientation="vertical"
     android:background="#ffE0E0E0"
 tools:context="com.example.jokerlol.acharyaone.Home">
 
-<TextView
-    android:layout_weight="3"
-    android:id="@+id/myname"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:text=""
-    android:textSize="40sp"
-    android:textColor="#000000"
-    android:gravity="bottom|center_horizontal" />
-
-    <TextView
-        android:id="@+id/mycurrentperiod"
-        android:layout_weight="3"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:text=""
-        android:textColor="#000000"
-        android:textSize="40sp"
-        android:gravity="center" />
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/mynextperiod"
-        android:layout_weight="3"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:text=""
-        android:textSize="35sp"
-        android:gravity="top|center_horizontal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffE0E0E0">
 
-    <Button
-        android:id="@+id/check"
-        android:layout_width="match_parent"
-        android:text="check again"
-        android:textSize="20sp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:textColor="#ffffffff"
-        android:background="@drawable/custom_button_home"/>
+            <TextView
+                android:id="@+id/myname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_above="@+id/mycurrentperiod"
+                android:textSize="40sp"
+                android:textColor="#000000"
+                android:gravity="bottom|center_horizontal" />
+
+            <TextView
+                android:id="@+id/mycurrentperiod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_centerInParent="true"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/mynextperiod"
+                android:layout_below="@+id/mycurrentperiod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="35sp"
+                android:gravity="top|center_horizontal" />
+
+            <Button
+                android:id="@+id/check"
+                android:layout_width="match_parent"
+                android:text="check again"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffffff"
+                android:background="@drawable/custom_button_home"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
 
 </LinearLayout>

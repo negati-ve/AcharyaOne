@@ -58,7 +58,7 @@ public class TimeTable extends Fragment {
                             if(sample.equals("41")||sample.equals("42")||sample.equals("43")||sample.equals("61")||sample.equals("62")||sample.equals("63")||sample.equals("81")||sample.equals("82")||sample.equals("83")||sample.equals("73")){
                                 Toast.makeText(getActivity(), "Timetable not available", Toast.LENGTH_SHORT).show();
                             }else{
-                                Intent intent = new Intent(getActivity(), TimeTableDisplay.class);
+                                Intent intent = new Intent(getActivity(), TimetableActivity.class);
                                 intent.putExtra("sem", sem);
                                 intent.putExtra("sec",sec);
                                 startActivity(intent);

@@ -161,7 +161,7 @@ public class Home extends Fragment {
                         currentperiod="now you have "+timetable[day - 2][6];
                     }
                     if (timetable[day - 2][7].equals("-")) {
-                        nextperiod="and it looks like you don't have any class next";
+                        nextperiod="and it looks like you don't have any class next ";
                     }else {
                         nextperiod="And you have "+timetable[day - 2][7]+" next";
                     }

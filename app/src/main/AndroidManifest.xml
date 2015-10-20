@@ -33,12 +33,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".TimeTableDisplay"
-            android:configChanges="orientation|keyboardHidden"
-            android:label="@string/title_activity_time_table_display"
-            android:screenOrientation="landscape" >
-        </activity>
 
         <service android:name="com.parse.PushService" />
 
@@ -78,7 +72,11 @@
             android:name=".Subshower"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_infoscreen"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TimetableActivity"
+            android:label="@string/title_activity_timetable" >
         </activity>
     </application>
 
