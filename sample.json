@@ -1,0 +1,67 @@
+note:-
+1)if their are only 5 periods then there should be 5 keys in day.
+2)starttime and endtime should be in 24 hours format.
+3)if it is a holiday then their should be only one key with value HOLIDAY in capital letters.
+4)branch,section and keys in timetable object should be in small letters.
+5)subject should be in capital letters and in full form.
+
+
+{
+ "Branch":{
+	    "Semester":{
+			 "Section":{
+				     "lastmodified":"some random number"
+				     "timetable":{
+						   "monday":{
+							      "1":"starttime***subject***endtime"
+							      "2":"starttime***subject***endtime"
+							      "3":"starttime***subject***endtime"
+							      "4":"starttime***subject***endtime"
+							      "5":"starttime***subject***endtime"
+							      "6":"starttime***subject***endtime"
+							      "7":"starttime***subject***endtime"
+							     }
+						   "tuesday":{
+							      "1":"starttime***subject***endtime"
+							      "2":"starttime***subject***endtime"
+							      "3":"starttime***subject***endtime"
+							      "4":"starttime***subject***endtime"
+							      "5":"starttime***subject***endtime"
+							      "6":"starttime***subject***endtime"
+							     }
+						   "wednesday":{
+							      "1":"starttime***subject***endtime"
+							      "2":"starttime***subject***endtime"
+							      "3":"starttime***subject***endtime"
+							      "4":"starttime***subject***endtime"
+							      "5":"starttime***subject***endtime"
+							      "6":"starttime***subject***endtime"
+							     }
+						   "thursday":{
+							      "1":"starttime***subject***endtime"
+							      "2":"starttime***subject***endtime"
+							      "3":"starttime***subject***endtime"
+							      "4":"starttime***subject***endtime"
+							      "5":"starttime***subject***endtime"
+							      "6":"starttime***subject***endtime"
+							      "7":"starttime***subject***endtime"
+							      "8":"starttime***subject***endtime"
+							     }
+						   "friday":{
+							      "1":"starttime***subject***endtime"
+							      "2":"starttime***subject***endtime"
+							      "3":"starttime***subject***endtime"
+							      "4":"starttime***subject***endtime"
+							      "5":"starttime***subject***endtime"
+							     }
+						   "saturday":{
+							      "1":"holiday"
+							     }
+						   "sunday":{
+							      "1":"holiday"
+							     }
+						 }
+					}
+				}
+			}
+		}
