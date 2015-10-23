@@ -1,67 +1,122 @@
 note:-
-1)if their are only 5 periods then there should be 5 keys in day.
-2)starttime and endtime should be in 24 hours format.
+1)if their are only 5 periods then there should be 5 keys in day. -check
+2)starttime and endtime should be in 24 hours format. -
 3)if it is a holiday then their should be only one key with value HOLIDAY in capital letters.
 4)branch,section and keys in timetable object should be in small letters.
 5)subject should be in capital letters and in full form.
+visit http://AcharyaOne.negative.co.in/API/cse/7/B/timetable/monday to check if above standards are met.
+
+API END POINTS.
+
+//DATA RETRIEVAL API END POINTS.
+// Based on just the branch
+Type:
+	GET
+Structure : 
+	host/API/branch_name
+Live Example:
+	http://AcharyaOne.negative.co.in/API/cse 
+
+// Based on branch and sem
+Type:
+	GET
+Structure : 
+	host/API/branch_name/semester
+Live Example:
+	http://AcharyaOne.negative.co.in/API/cse/7 
+
+// Based on branch, sem and section
+Type:
+	GET
+Structure : 
+	host/API/branch_name/semester/section
+Live Example:
+	http://AcharyaOne.negative.co.in/API/cse/7/B
+
+// Based on branch, sem, section and field
+Type:
+	GET
+Structure : 
+	host/API/branch_name/semester/section/field
+	host/API/branch_name/semester/7/B/lastmodified
+Live Example:
+	http://AcharyaOne.negative.co.in/API/cse/7/B/timetable
+
+// Based on branch, sem, section, field and day
+Type:
+	GET
+Structure : 
+	host/API/branch_name/semester/section/field/day
+Live Example:
+	http://AcharyaOne.negative.co.in/API/cse/7/B/timetable/monday
+
+// Based on branch, sem, section, field, day and lecture index
+Type:
+	GET
+Structure : 
+	host/API/branch_name/semester/section/field/day/index
+Live Example:
+	http://AcharyaOne.negative.co.in/API/cse/7/B/timetable/monday/2
 
 
-{
- "Branch":{
-	    "Semester":{
-			 "Section":{
-				     "lastmodified":"some random number"
-				     "timetable":{
-						   "monday":{
-							      "1":"starttime***subject***endtime"
-							      "2":"starttime***subject***endtime"
-							      "3":"starttime***subject***endtime"
-							      "4":"starttime***subject***endtime"
-							      "5":"starttime***subject***endtime"
-							      "6":"starttime***subject***endtime"
-							      "7":"starttime***subject***endtime"
-							     }
-						   "tuesday":{
-							      "1":"starttime***subject***endtime"
-							      "2":"starttime***subject***endtime"
-							      "3":"starttime***subject***endtime"
-							      "4":"starttime***subject***endtime"
-							      "5":"starttime***subject***endtime"
-							      "6":"starttime***subject***endtime"
-							     }
-						   "wednesday":{
-							      "1":"starttime***subject***endtime"
-							      "2":"starttime***subject***endtime"
-							      "3":"starttime***subject***endtime"
-							      "4":"starttime***subject***endtime"
-							      "5":"starttime***subject***endtime"
-							      "6":"starttime***subject***endtime"
-							     }
-						   "thursday":{
-							      "1":"starttime***subject***endtime"
-							      "2":"starttime***subject***endtime"
-							      "3":"starttime***subject***endtime"
-							      "4":"starttime***subject***endtime"
-							      "5":"starttime***subject***endtime"
-							      "6":"starttime***subject***endtime"
-							      "7":"starttime***subject***endtime"
-							      "8":"starttime***subject***endtime"
-							     }
-						   "friday":{
-							      "1":"starttime***subject***endtime"
-							      "2":"starttime***subject***endtime"
-							      "3":"starttime***subject***endtime"
-							      "4":"starttime***subject***endtime"
-							      "5":"starttime***subject***endtime"
-							     }
-						   "saturday":{
-							      "1":"holiday"
-							     }
-						   "sunday":{
-							      "1":"holiday"
-							     }
-						 }
-					}
-				}
-			}
-		}
+//UPDATE API END POINTS.
+//ping the server to update timestamp based on branch and sem
+Type:
+	POST
+Structure : 
+	host/API/update/branch_name/semester/notify
+Live Example:
+	http://AcharyaOne.negative.co.in/API/update/cse/7/B/notify
+
+//update subject name for particular index
+Type:
+	POST
+Structure : 
+	host/API/update/branch_name/semester/section/timetable/day/index/subject
+Live Example:
+	http://AcharyaOne.negative.co.in/API/cse/7/B/timetable/monday/2
+Required Data:
+	subject
+
+//update start time for subject for index
+Type:
+	POST
+Structure : 
+	host/API/update/branch_name/semester/section/timetable/day/index/start
+Live Example:
+	http://AcharyaOne.negative.co.in/API/cse/7/B/timetable/monday/2
+Required Data:
+	start
+
+//update end time for subject for index
+Type:
+	POST
+Structure : 
+	host/API/update/branch_name/semester/section/timetable/day/index/end
+Live Example:
+	http://AcharyaOne.negative.co.in/API/cse/7/B/timetable/monday/2
+Required Data:
+	end
+
+
+//DELETE API END POINTS.
+//delete an index
+Type:
+	DELETE
+Structure : 
+	host/API/branch_name/semester/section/field/day/index
+Live Example:
+	http://AcharyaOne.negative.co.in/API/cse/7/B/timetable/monday/2
+
+//CREATE API END POINTS.
+//Create new index for a day
+Type:
+	POST
+Structure : 
+	host/API/branch_name/semester/section/timetable/day/index
+Live Example:
+	http://AcharyaOne.negative.co.in/API/cse/7/B/timetable/monday/2
+Required Data:
+	subject,
+	start,
+	end
